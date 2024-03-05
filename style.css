@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: Helvetica, sans-serif ;
+}
+
+body {
+  width: 100vw;
+}
+
+
+/* HEADER */
+header {
+  font-size: 15.5rem;
+  font-weight: 900;
+}
+
+/*  */
+div {
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+/*  */
+
+
+/* ARTICLE */
+article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 33vw);
+  grid-template-rows: repeat(auto-fit, 45vw);
+  grid-auto-rows: 45vw;
+  gap: .5rem;
+}
+
+
+/* NAVIGATION */
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+nav > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
