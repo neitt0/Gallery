@@ -8,6 +8,7 @@
 
 body {
   width: 100vw;
+  padding: 1rem;
 }
 
 
@@ -17,8 +18,18 @@ header {
   font-weight: 900;
 }
 
+
+
+/* ARTICLE */
+article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 32vw);
+  grid-template-rows: repeat(auto-fit, 45vw);
+  grid-auto-rows: 45vw;
+  gap: .5rem;
+}
 /*  */
-div {
+.article-content {
   width: 100%;
   height: 100%;
   background-color: yellow;
@@ -26,30 +37,31 @@ div {
 /*  */
 
 
-/* ARTICLE */
-article {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 33vw);
-  grid-template-rows: repeat(auto-fit, 45vw);
-  grid-auto-rows: 45vw;
-  gap: .5rem;
-}
-
-
 /* NAVIGATION */
 nav {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
+  /* width: 100vw; */
   height: 4rem;
+  padding: 0 1rem;
+  padding-top: .5rem;
   background-color: #fff;
+}
+
+.nav-container {
+  padding: .5rem 0;
+  border: 1px solid #000;
+  border-left: 0rem;
+  border-right: 0rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav > button {
+.nav-container > button {
   background: none;
   border: none;
   cursor: pointer;
@@ -57,7 +69,7 @@ nav > button {
   font-weight: 700;
 }
 
-nav > a {
+.nav-container > a {
   text-decoration: none;
   color: black;
   font-weight: 700;
