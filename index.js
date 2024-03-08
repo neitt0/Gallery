@@ -7,7 +7,7 @@ function splitText() {
   sciFiEffect.textContent = ''
   
   for (let i = 0; i < scifxList.length; i++) {
-    let tempChild = document.createElement('h1')
+    let tempChild = document.createElement('span')
     tempChild.textContent = scifxList[i]
     tempChild.classList.add('sci-fi-effect')
     tempChild.classList.add('hidden')
