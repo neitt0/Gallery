@@ -13,11 +13,14 @@ body {
   opacity: 0;
 }
 
+.scroll-toggle {
+  overflow: hidden;
+}
+
 
 /* HEADER */
 header {
-  display: inline-block;
-  /* justify-content: space-between; */
+  display: inline;
 }
 
 header > h1, header > span{
@@ -73,7 +76,8 @@ nav {
   padding-top: .5rem;
   background-color: #fff;
   height: 100vh;
-
+  overflow: scroll;
+  
   transition: all .4s ease;
 }
 
@@ -87,7 +91,7 @@ nav {
   border-left: 0rem;
   border-right: 0rem;
   margin-bottom: 2px;
-
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,6 +111,7 @@ nav {
   font-weight: 700;
 }
 
+/*  */
 .indexImgContainer {
   width: 100%;
   height: auto;
