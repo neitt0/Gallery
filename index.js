@@ -1,33 +1,35 @@
-let sciFiEffect = document.querySelector('.sci-fi-effect')
+let buttons = document.querySelectorAll('button')
+let indexBtn = document.querySelector('.index')
+let infoBtn = document.querySelector('.info')
 
-splitText()
-
-function splitText() {
-  let scifxList = sciFiEffect.textContent.split('')
-  sciFiEffect.textContent = ''
-  
-  for (let i = 0; i < scifxList.length; i++) {
-    let tempChild = document.createElement('span')
-    tempChild.textContent = scifxList[i]
-    tempChild.classList.add('sci-fi-effect')
-    tempChild.classList.add('hidden')
-
-    sciFiEffect.parentElement.appendChild(tempChild)
-  }
-  
-  console.log(sciFiEffect.parentElement)
-  sciFiEffect.remove()
+for (b of buttons) {
+  // b.addEventListener('click', () => {
+    // stop main page from scrolling while nav in open
+    let body = document.querySelector('body')
+    let nav = document.querySelector('nav')
+    body.style.overflow = 'hidden';
+    nav.style.overflow = 'scroll'
+    // target button's grandparent
+    b.parentElement.parentElement.classList.toggle('fullNav')
+  // })
 }
 
-let sciFiEffect2 = document.querySelectorAll('.sci-fi-effect')
+// indexBtn.addEventListener('click', () => {
+  let articleCells = document.querySelectorAll('.article-content')
+  let navContent = document.querySelector('.nav-content')
 
+  for (cell of articleCells) {
+    if (cell.children.length > 0) {
+      let tempContent = document.createElement('div')
 
-for (let i = 0; i < sciFiEffect2.length; i++) {
-  setTimeout(() => {removeHidden(sciFiEffect2, i)}, 1000)
-}
+      tempContent.appendChild(cell.children[0])
+      tempContent.classList.add('indexImgContainer') 
 
-  function removeHidden(list, count) {
-    setInterval(() => {
-      list[count].classList.remove('hidden')
-    }, 70 * count)
+      navContent.appendChild(tempContent)
+    }
   }
+// })
+
+infoBtn.addEventListener('click', () => {
+
+})

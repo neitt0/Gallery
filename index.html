@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery Website</title>
   <link rel="stylesheet" href="style.css">
+  <script src="staggerFX.js" defer></script>
   <script src="index.js" defer></script>
 </head>
 <body>
@@ -14,6 +15,7 @@
   </header>
 
   <article>
+    <!-- DIV can't ahve any other children -->
     <div class="article-content">
       <img src="./resources/images/aestheticWallpaper.jpg" alt="">
     </div>
@@ -30,24 +32,28 @@
       <img src="./resources/images/door.jpg" alt="">
     </div>
     <div class="article-content">
-      <img src="./resources/images/ghostOfTsushima.jpg" alt="">
+      <!-- <img src="./resources/images/ghostOfTsushima.jpg" alt=""> -->
     </div>
     <div class="article-content">
-      <img src="./resources/images/laptop.jpg" alt="">
+      <!-- <img src="./resources/images/laptop.jpg" alt=""> -->
     </div>
     <div class="article-content">
-      <img src="./resources/images/paintBuckets.jpg" alt="">
+      <!-- <img src="./resources/images/paintBuckets.jpg" alt=""> -->
     </div>
     <div class="article-content">
       <img src="./resources/images/snowboard.jpg" alt="">
     </div>
   </article>
 
-  <nav>
+  <nav class="fullNav">
     <div class="nav-container">
-      <button>INDEX</button>
-      <a href="index.html">TN</a>
-      <button>INFO</button>
+      <button class="index">INDEX</button>
+      <a href="#">T</a>
+      <button class="info">INFO</button>
+    </div>
+
+    <div class="nav-content">
+      <!-- specified info goes here -->
     </div>
   </nav>
 

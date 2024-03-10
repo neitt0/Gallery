@@ -66,13 +66,19 @@ article {
 /* NAVIGATION */
 nav {
   position: fixed;
-  bottom: 0;
   left: 0;
   right: 0;
-  height: 4rem;
+  top: 53.5rem;
   padding: 0 1rem;
   padding-top: .5rem;
   background-color: #fff;
+  height: 100vh;
+
+  transition: all .4s ease;
+}
+
+.fullNav {
+  top: 0;
 }
 
 .nav-container {
@@ -80,6 +86,7 @@ nav {
   border: 1px solid #000;
   border-left: 0rem;
   border-right: 0rem;
+  margin-bottom: 2px;
 
   display: flex;
   justify-content: space-between;
@@ -98,4 +105,22 @@ nav {
   text-decoration: none;
   color: black;
   font-weight: 700;
+}
+
+.indexImgContainer {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+}
+
+.indexImgContainer:first-child {
+  border-top: 1px solid #000;
+}
+
+.indexImgContainer > img {
+  width: 150px;
+  height: 225px;
+
+  object-fit: cover;
 }
