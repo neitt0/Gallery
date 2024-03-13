@@ -18,6 +18,7 @@ let currentInfoP
 // })
 
 indexBtn.addEventListener('click', () => {
+  // check if nav is open
   if (!nav.classList.contains('fullNav')) {
     nav.classList.toggle('fullNav')
 
@@ -26,10 +27,12 @@ indexBtn.addEventListener('click', () => {
 
     body.classList.toggle('scroll-toggle')
     nav.classList.toggle('scroll-toggle')
+  // check if clicked different button
   } else if (currentInfoP != indexBtn) {
     indexContent.hidden = false;
     infoContent.hidden = true;
   
+  // check if clicked same button while nav is open
   } else if (nav.classList.contains('fullNav') && currentInfoP == indexBtn) {
     nav.classList.toggle('fullNav')
     indexContent.hidden = true;
