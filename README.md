@@ -7,3 +7,8 @@ Project is meant for learning while building
 Looks like reference page
 All/most buttons function as expected
 Smooth transition/hover effects
+
+## New Material Learned
+optimizing loading imges
+Lazy load
+srcsety

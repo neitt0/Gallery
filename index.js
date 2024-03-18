@@ -37,6 +37,8 @@ indexBtn.addEventListener('click', () => {
     nav.classList.toggle('fullNav')
     indexContent.hidden = true;
     infoContent.hidden = true;
+    body.classList.toggle('scroll-toggle')
+    nav.classList.toggle('scroll-toggle')
   } else {
     console.log('something went incredibly wrong')
   }
@@ -72,6 +74,9 @@ infoBtn.addEventListener('click', () => {
 
     indexContent.hidden = true;
     infoContent.hidden = true;
+
+    body.classList.toggle('scroll-toggle')
+    nav.classList.toggle('scroll-toggle')
   } else {
     console.log('something went incredibly wrong')
   }
