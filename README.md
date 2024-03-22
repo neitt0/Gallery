@@ -9,6 +9,6 @@ All/most buttons function as expected
 Smooth transition/hover effects
 
 ## New Material Learned
-optimizing loading imges
-Lazy load
-srcsety
+- grid
+- optimizing loading images
+- Lazy load
